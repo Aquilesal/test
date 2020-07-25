@@ -51,10 +51,10 @@ router.post("/currencyConvert", async (req, res) => {
       usd = dashPrice.price * amount;
       break;
     case "PTR":
-      usd = ptrPrice.price * amount;
+      usd = ptrPrice * amount;
       break;
     case "BS":
-      usd = bsPrice.price * amount;
+      usd = bsPrice * amount;
       break;
     case "EUR":
       usd = eurPrice.price * amount;
